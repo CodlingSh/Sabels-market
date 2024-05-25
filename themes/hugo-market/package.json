@@ -1,14 +1,17 @@
 {
   "name": "hugo-market",
   "version": "1.0.0",
-  "description": "## Features",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss build -i themes/hugo-market/assets/css/main.css -o themes/hugo-market/static/css/styles.css",
-    "watch": "npx tailwindcss build -i themes/hugo-market/assets/css/main.css -o themes/hugo-market/static/css/styles.css --watch"
+    "build": "npx tailwindcss build -i static/css/input.css -o static/css/styles.css",
+    "watch": "npx tailwindcss build -i static/css/input.css -o static/css/styles.css --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.3"
+  }
 }
