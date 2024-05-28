@@ -2,5 +2,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/styles.css" rel="stylesheet">
+    <style>
+        .pageSection:nth-child(3n+1) {
+            background-color: {{ .Site.Params.colors.sectColor1 }};
+        }
+
+        .pageSection:nth-child(3n+2) {
+            background-color: {{ .Site.Params.colors.sectColor2 }};
+        }
+
+        .pageSection:nth-child(3n+3) {
+            background-color: {{ .Site.Params.colors.sectColor3 }};
+        }
+    </style>
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ printf "%s | %s" .Page.Title .Site.Title }} {{ end }}</title>
 </head>

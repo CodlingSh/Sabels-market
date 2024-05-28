@@ -1,0 +1,9 @@
+{{ $heroImage := resources.Get "img/hero.jpg" }}
+
+{{ with $heroImage }}
+<header style="background-image: url({{ .RelPermalink }});" class="bg-cover bg-bottom w-full h-[90vh] bg-ima">
+    <div class="w-full h-full bg-black opacity-25"></div>
+    
+    
+</header>
+{{ end }}
