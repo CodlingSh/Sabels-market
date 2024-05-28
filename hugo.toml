@@ -3,7 +3,6 @@ languageCode = 'en-us'
 title = "Sable's Market"
 theme = "hugo-market"
 
-
 [[menu.main]]
     identifier = "home"
     name = "Home"
@@ -29,3 +28,11 @@ theme = "hugo-market"
     name = "Contact"
     url = "/contact"
     weight = 5
+
+[params]
+  [params.colors]
+    navColor = "#485460"
+    sectColor1 = "#f2f3ee"
+    sectColor2 = "#e9edc9"
+    sectColor3 = "#ccd5ae"
+    footerColor = "#899d78"
