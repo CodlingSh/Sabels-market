@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Sable&#39;s Market</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Sable&#39;s Market</description>
+    <title>Indices on Sable&#39;s Market</title>
+    <link>http://localhost:1313/index/</link>
+    <description>Recent content in Indices on Sable&#39;s Market</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 May 2024 22:28:44 -0400</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Welcome</title>
       <link></link>

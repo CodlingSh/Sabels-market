@@ -1,15 +1,5 @@
 {{ define "main" }}
-    {{ partial "menu.html" }}
-    <h1 class="bg-red-500">Welcome to sables market</h1>
-    <section class="pageSection">
-        <p>test</p>
-    </section>
-    <section class="pageSection">
-        <p>test</p>
-    </section>
-    <section class="pageSection">
-        <p>test</p>
-    </section>
-    {{ $test := .Site.Params.test }}
-    <p>{{ printf "%s" $test }}</p>
+    {{ range (where .Site.RegularPages "Type" "in" "index") }}
+    <section class="pageSection"><a href="{{ .RelPermalink }}">{{ .RelPermalink }}</a></section>
+    {{ end }}
 {{ end }}
