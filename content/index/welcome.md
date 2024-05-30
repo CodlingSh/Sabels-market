@@ -4,7 +4,7 @@ draft = false
 title = "Welcome"
 weight = 1
 layout = "vertical"
-showTitle = true
+showTitle = false
 [build]
     list = "always"
     render = "never"
