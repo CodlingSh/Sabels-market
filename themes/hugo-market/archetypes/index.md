@@ -6,6 +6,6 @@ weight = 999
 layout = 'vertical'
 showTitle = true
 [build]
-    list = "local"
-    render = "none"
+    list = "always"
+    render = "never"
 +++
