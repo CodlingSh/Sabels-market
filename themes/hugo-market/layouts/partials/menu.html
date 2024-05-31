@@ -5,4 +5,16 @@
         <div class="bg-white h-1 w-full"></div>
         <div class="bg-white h-1 w-full"></div>
     </div>
+
+    <div id="mobileNav" class="fixed top-0 left-0 w-full bg-white rounded-b-[20px] z-40">
+        <h2 class="border-b-[0.125rem] border-black py-4 h-20">Sable's Market</h2>
+        <ul>
+            {{ range site.Menus.main }}
+            <li class="text-black text-xl border-b-[0.125rem] border-black p-4 text-center">{{ .Name }}</li>
+            {{ end }}
+        </ul>
+    </div>
+
+    {{/* OPacity layer */}}
+    <div class="fixed top-0 left-0 w-full h-full bg-black opacity-25 z-30"></div>
 </nav>
