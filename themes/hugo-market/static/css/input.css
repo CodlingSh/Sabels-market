@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "Hepta";
+    src: url("fonts/HeptaSlab-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+body {
+    font-family: "Hepta", serif;
+    font-weight: 400;
+}
+
 .content {
     max-width: 40rem;
 }
