@@ -1,0 +1,12 @@
+{{ $logoImage := resources.Get "img/logo.svg" }}
+
+
+<div class="text-white flex">
+    {{ with $logoImage }}
+    <img src="{{ .RelPermalink }}" class="w-full">
+    {{ end }}
+    <div>
+        <h2>Sable's</h2>
+        <h2>Market</h2>
+    </div>
+</div>
