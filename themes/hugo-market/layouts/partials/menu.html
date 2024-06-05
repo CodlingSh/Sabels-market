@@ -10,7 +10,7 @@
         <h2 class="py-4 h-20 text-center">Sable's<br> Market</h2>
         <ul class="absolute w-full h-fit m-auto left-0 right-0 top-0 bottom-0">
             {{ range site.Menus.main }}
-            <li class="text-black text-2xl p-5 text-center">{{ .Name }}</li>
+            <li class="text-black text-2xl p-5 text-center"><a href="{{ .URL }}">{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </div>
