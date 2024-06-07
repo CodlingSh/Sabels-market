@@ -15,7 +15,7 @@ body {
     font-weight: 400;
 }
 
-.content {
+.content p {
     max-width: 40rem;
 }
 .content p:not(:last-child) {
