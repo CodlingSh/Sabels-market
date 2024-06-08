@@ -1,14 +1,25 @@
 <!-- Dummy iFrame to stop redirecting to a new page -->
 <iframe name="dummyFrame" id="dummyFrame" style="display: none;"></iframe>
 
-<section id="contactSect" class="w-full max-w-xl bg-white rounded-2xl p-8">
+<section id="contactSect" class="bg-white rounded-2xl p-12">
     <form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()">
-        <div class="flex w-full justify-between">
-            <input type="text" id="firstName" name="firstName" class="border-2 border-rose-500 w-52">
-            <input type="text" id="lastName" name="lastName" class="border-2 border-rose-500 w-52">
+        <div class="grid grid-cols-2">
+            <input type="text" id="firstName" name="firstName" class="border-2 border-rose-500 py-2 px-4 mb-8 w-full">
+            <input type="text" id="lastName" name="lastName" class="border-2 border-rose-500 py-2 px-4 mb-8">
+            <input type="text" id="email" name="email" class="border-2 border-rose-500 py-2 px-4 mb-8">
         </div>
     </form>
 </section>
+
+<!-- <section id="contactSect" class="bg-white rounded-2xl p-12">
+    <form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()">
+        <div class="flex flex-col flex-wrap sm:flex-row sm:justify-between">
+            <input type="text" id="firstName" name="firstName" class="border-2 border-rose-500 py-2 px-4 mb-8 w-full sm:w-1/2 sm:mr">
+            <input type="text" id="lastName" name="lastName" class="border-2 border-rose-500 py-2 px-4 mb-8 w-full sm:w-1/2">
+            <input type="text" id="email" name="email" class="border-2 border-rose-500 py-2 px-4 mb-8 w-full">
+        </div>
+    </form>
+</section> -->
 
 <!-- <section id="contactSect"> -->
     <!-- <form name='contact' target="dummyFrame" method='POST' data-netlify="true" onsubmit="return validateContact()"> -->
