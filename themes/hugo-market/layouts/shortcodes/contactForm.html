@@ -1,15 +1,16 @@
 <!-- Dummy iFrame to stop redirecting to a new page -->
 <iframe name="dummyFrame" id="dummyFrame" style="display: none;"></iframe>
 
-<section id="contactSect" class="bg-white rounded-2xl p-12">
-    <form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()">
-        <div class="grid grid-cols-2">
-            <input type="text" id="firstName" name="firstName" class="border-2 border-rose-500 py-2 px-4 mb-8 w-full">
-            <input type="text" id="lastName" name="lastName" class="border-2 border-rose-500 py-2 px-4 mb-8">
-            <input type="text" id="email" name="email" class="border-2 border-rose-500 py-2 px-4 mb-8">
-        </div>
-    </form>
-</section>
+<form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()" class="bg-white rounded-2xl p-10 shadow-sm shadow-rose-500">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg">
+        <input type="text" id="email" name="email" placeholder="Email Address" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg sm:col-span-2">
+        <textarea rows="8" placeholder="Enter your message" class="resize-y border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 rounded-lg p-4 sm:col-span-2"></textarea>
+        <button type="submit" class="p-4 rounded-lg border-[0.1875rem] outline-none border-rose-500 bg-rose-500 sm:col-span-2">Send Message</button>
+    </div>
+</form>
+
 
 <!-- <section id="contactSect" class="bg-white rounded-2xl p-12">
     <form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()">
