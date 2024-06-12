@@ -13,3 +13,5 @@ showTitle = false
 Welcome to Sable's Market, where we believe that fresh and homemade is best!
 
 We only sell high-quality food that comes right from our backyard farm and is free from harmful chemicals and additives
+
+{{< linkButton text="Learn More" link="about" >}}
