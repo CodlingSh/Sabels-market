@@ -16,9 +16,17 @@ body {
 }
 
 .content p {
-    max-width: 40rem;
+    max-width: 42rem;
+    margin: 0 auto;
 }
 .content p:not(:last-child) {
     line-height: 1.5;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .hori_margin_off p {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
