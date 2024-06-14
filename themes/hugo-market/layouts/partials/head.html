@@ -4,6 +4,14 @@
     <link href="/css/styles.css" rel="stylesheet">
     <script src="/js/scripts.js" defer></script>
     <style>
+        .bg-header {
+            background-color: {{ .Site.Params.colors.navColor }};
+        }
+
+        .bg-highlight {
+            background-color: {{ .Site.Params.colors.highlightColor }};
+        }
+
         .pageSection:nth-child(3n+1) {
             background-color: {{ .Site.Params.colors.sectColor1 }};
         }
