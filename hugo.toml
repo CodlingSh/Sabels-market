@@ -33,6 +33,7 @@ theme = "hugo-market"
 [params]
   [params.colors]
     navColor = "#485460"
+    highlightColor = "#df86ac"
     sectColor1 = "#f2f3ee"
     sectColor2 = "#e9edc9"
     sectColor3 = "#ccd5ae"
