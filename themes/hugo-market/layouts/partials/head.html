@@ -4,24 +4,53 @@
     <link href="/css/styles.css" rel="stylesheet">
     <script src="/js/scripts.js" defer></script>
     <style>
+        :root {
+            --highlight_color: {{ .Site.Params.colors.highlightColor }};
+            --nav_footer_color: {{ .Site.Params.colors.navFooterColor }};
+            --sect_color1: {{ .Site.Params.colors.sectColor1 }};
+            --sect_color2: {{ .Site.Params.colors.SectColor2 }};
+            --sect_color3: {{ .Site.Params.colors.SectColor3 }}; 
+        }
+
         .bg-header {
-            background-color: {{ .Site.Params.colors.navColor }};
+            background-color: var(--nav_footer_color);
         }
 
         .bg-highlight {
-            background-color: {{ .Site.Params.colors.highlightColor }};
+            background-color: var(--highlight_color);
+        }
+
+        .btn {
+            border: 0.25rem solid var(--highlight_color);
+            color: var(--highlight_color);
+            font-size: 1.125rem/* 18px */;
+            line-height: 1.75rem/* 28px */;
+            font-weight: 600;
+            padding-left: 1.25rem/* 20px */;
+            padding-right: 1.25rem/* 20px */;
+            padding-top: 0.5rem/* 8px */;
+            padding-bottom: 0.5rem/* 8px */;
+            border-radius: 9999px;
+            transition-property: color, background-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 500ms;
+        }
+
+        .btn:hover {
+            background-color: var(--highlight_color);
+            color: #0c0c0c;
         }
 
         .pageSection:nth-child(3n+1) {
-            background-color: {{ .Site.Params.colors.sectColor1 }};
+            background-color: var(--sect_color1);
         }
 
         .pageSection:nth-child(3n+2) {
-            background-color: {{ .Site.Params.colors.sectColor2 }};
+            background-color: var(--sect_color2);
         }
 
         .pageSection:nth-child(3n+3) {
-            background-color: {{ .Site.Params.colors.sectColor3 }};
+            background-color: var(--sect_color3);
         }
     </style>
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ printf "%s | %s" .Page.Title .Site.Title }} {{ end }}</title>
