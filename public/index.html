@@ -1,46 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><nav>
-    
-    <div class="bg-pink-500 w-16 h-16 flex flex-col justify-around items-center rounded-full p-3 fixed right-2 top-2 z-50">
-        <div class="bg-white h-1 w-full"></div>
-        <div class="bg-white h-1 w-full"></div>
-        <div class="bg-white h-1 w-full"></div>
-    </div>
-</nav>
-<head>
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
 	<meta name="generator" content="Hugo 0.126.1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/styles.css" rel="stylesheet">
+    <script src="/js/scripts.js" defer></script>
     <style>
+        :root {
+            --highlight_color: #df86ac;
+            --nav_footer_color: #485460;
+            --sect_color1: #f2f3ee;
+            --sect_color2: #e9edc9;
+            --sect_color3: #ccd5ae; 
+        }
+
+        .bg-header {
+            background-color: var(--nav_footer_color);
+        }
+
+        .bg-highlight {
+            background-color: var(--highlight_color);
+        }
+
+        .btn {
+            border: 0.25rem solid var(--highlight_color);
+            color: var(--highlight_color);
+            font-size: 1.125rem ;
+            line-height: 1.75rem ;
+            font-weight: 600;
+            padding-left: 1.25rem ;
+            padding-right: 1.25rem ;
+            padding-top: 0.5rem ;
+            padding-bottom: 0.5rem ;
+            border-radius: 9999px;
+            transition-property: color, background-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 500ms;
+        }
+
+        .btn:hover {
+            background-color: var(--highlight_color);
+            color: #0c0c0c;
+        }
+
         .pageSection:nth-child(3n+1) {
-            background-color: #f2f3ee;
+            background-color: var(--sect_color1);
         }
 
         .pageSection:nth-child(3n+2) {
-            background-color: #e9edc9;
+            background-color: var(--sect_color2);
         }
 
         .pageSection:nth-child(3n+3) {
-            background-color: #ccd5ae;
+            background-color: var(--sect_color3);
         }
     </style>
     <title>Sable&#39;s Market</title>
-</head><body>
+</head><nav>
+    
+    <div id="nav_btn" class="bg-pink-500 w-16 h-16 flex flex-col justify-around items-center rounded-full p-3 fixed right-2 top-2 z-50 sm:hidden">
+        <div class="bg-white h-1 w-full"></div>
+        <div class="bg-white h-1 w-full"></div>
+        <div class="bg-white h-1 w-full"></div>
+    </div>
+
+    <div id="mobileNav" class="fixed top-0 left-0 -translate-x-full w-full h-full bg-white rounded-b-[20px] z-40 transition lg:hidden">
+        <h2 class="py-4 h-20 text-center">Sable's<br> Market</h2>
+        <ul class="absolute w-full h-fit m-auto left-0 right-0 top-0 bottom-0">
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/">Home</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/about">About</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/chicken-cam">Chicken Cam</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/recipes">Recipes</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/contact">Contact</a></li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="desktopNav" class="hidden bg-header p-5 sm:block">
+        <ul class="flex justify-between text-xl font-bold text-white w-full max-w-2xl mx-auto px-4">
+            
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/about">About</a></li>
+            
+            <li><a href="/chicken-cam">Chicken Cam</a></li>
+            
+            <li><a href="/recipes">Recipes</a></li>
+            
+            <li><a href="/contact">Contact</a></li>
+            
+        </ul>
+    </div>
+
+</nav><body>
 
 
-<header style="background-image: url(/img/hero.jpg);" class="bg-cover bg-bottom w-full h-[85vh]">
-    <div class="w-full h-full bg-black opacity-25"></div>
-    
-    
+
+
+<header style="background-image: url(/img/hero.jpg);" class="flex items-center bg-cover bg-bottom w-full h-[85vh]">
+    <div class="relative w-full p-8 bg-black/50 z-10">
+        <div class=" w-7/12 max-w-60 m-auto font-bold text-4xl text-center z-20 block sm:hidden">
+            
+            <img src="/img/logoVert.svg" class="w-full">
+            
+        </div>
+        <div class="w-9/12 max-w-lg m-auto font-bold text-7xl text-center z-20 hidden sm:block">
+            
+            <img src="/img/logoHori.svg" class="w-full">
+            
+        </div>
+        <h2>Sarnia's best in home grown eggs and produce</h2>
+    </div>
 </header>
 <div id="content">
+
     
-    <section class="pageSection"><a href=""></a></section>
+        
+
+        <section class="pageSection py-8 px-[2.5%]">
+            
+            
+                <div class="flex flex-col items-center justify-center">
+                    <div class="content w-full"><p>Welcome to Sable&rsquo;s Market, where we believe that fresh and homemade is best!</p>
+<p>We only sell high-quality food that comes right from our backyard farm and is free from harmful chemicals and additives</p>
+<div class="w-full flex justify-around">
+    <a href="about" class="btn">Learn More</a>
+</div>
+</div>
+                </div>
+            
+        </section>
     
-    <section class="pageSection"><a href="/index/testing/">/index/testing/</a></section>
+        
+
+        <section class="pageSection py-8 px-[2.5%]">
+            
+                <h2 class="text-4xl font-bold text-center mb-6">TestBundle</h2>
+            
+            
+                <div class="flex flex-col items-center max-w-7xl gap-8 lg:flex-row lg:items-start lg:justify-between lg:mx-auto">
+                    <div class="content hori_margin_off"><p>This is content from a page bundle! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis vulputate orci, quis rutrum libero. Mauris vitae tortor id erat egestas congue. Maecenas consequat felis faucibus leo facilisis, at iaculis metus dignissim. Nam porttitor turpis et dolor vestibulum, at pellentesque lectus pharetra. In iaculis, dolor ac tincidunt posuere, magna diam efficitur nisi, vel accumsan elit turpis eu nunc. Donec egestas dignissim est in maximus. Duis dapibus,</p>
+<p>arcu a dapibus ullamcorper, magna ipsum volutpat orci, id hendrerit nunc est vitae urna. Cras hendrerit urna porta consequat pharetra. Praesent nulla ligula, facilisis id justo eget, ultricies placerat nibh. Nulla at quam et arcu ullamcorper porttitor nec vitae mauris. Proin id dapibus neque. Donec feugiat bibendum varius. Donec varius massa at leo pretium pellentesque. Cras lacus odio, mattis sed arcu a, condimentum faucibus mi. Duis orci velit, luctus nec interdum et, congue eu elit.</p>
+</div>
+                    
+                        <img src="/index/testbundle/asciiGlasses.png" width="640" height="640" alt="" class="w-full max-w-lg lg:w-1/2">
+                    
+                </div>
+            
+        </section>
+    
+        
+
+        <section class="pageSection py-8 px-[2.5%]">
+            
+                <h2 class="text-4xl font-bold text-center mb-6">Recipes</h2>
+            
+            
+                <div class="flex flex-col items-center justify-center">
+                    <div class="content w-full"><div>
+    
+</div>
+</div>
+                </div>
+            
+        </section>
+    
+        
+
+        <section class="pageSection py-8 px-[2.5%]">
+            
+                <h2 class="text-4xl font-bold text-center mb-6">Contact</h2>
+            
+            
+                <div class="flex flex-col items-center justify-center">
+                    <div class="content w-full">
+<iframe name="dummyFrame" id="dummyFrame" style="display: none;"></iframe>
+
+<form name="contact" target="dummyFrame" method="POST" data-netlify="true" onsubmit="return validateContact()" class="bg-white p-4 mx-auto max-w-3xl rounded-2xl shadow-sm shadow-rose-500 sm:p-10">
+    <div class="grid grid-cols-1 gap-4 sm:gap-8 sm:grid-cols-2">
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg">
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg">
+        <input type="text" id="email" name="email" placeholder="Email Address" class="border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 p-4 rounded-lg sm:col-span-2">
+        <textarea rows="8" placeholder="Enter your message" class="resize-y border-[0.1875rem] outline-none border-gray-400 focus:border-rose-500 rounded-lg p-4 sm:col-span-2"></textarea>
+        
+        <button type="submit" class="btn sm:col-span-2">Send Message</button>
+    </div>
+</form>
+</div>
+                </div>
+            
+        </section>
     
 
-        </div></body>
+
+        </div><footer class="bg-header p-8 text-white">
+    <div class="flex flex-col items-center justify-between">
+        <div>
+            <p>Social Media Links</p>
+        </div>
+        <div>
+            <p>copyright stuff</p>
+        </div>
+    </div>
+</footer></body>
 </html>

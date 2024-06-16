@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Hepta";
+    src: url("../fonts/HeptaSlab-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+body {
+    font-family: "Hepta", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+.content p {
+    max-width: 42rem;
+    margin: 0 auto;
+}
+.content p:not(:last-child) {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .hori_margin_off p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

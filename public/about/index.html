@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/styles.css" rel="stylesheet">
+    <script src="/js/scripts.js" defer></script>
+    <style>
+        :root {
+            --highlight_color: #df86ac;
+            --nav_footer_color: #485460;
+            --sect_color1: #f2f3ee;
+            --sect_color2: #e9edc9;
+            --sect_color3: #ccd5ae; 
+        }
+
+        .bg-header {
+            background-color: var(--nav_footer_color);
+        }
+
+        .bg-highlight {
+            background-color: var(--highlight_color);
+        }
+
+        .btn {
+            border: 0.25rem solid var(--highlight_color);
+            color: var(--highlight_color);
+            font-size: 1.125rem ;
+            line-height: 1.75rem ;
+            font-weight: 600;
+            padding-left: 1.25rem ;
+            padding-right: 1.25rem ;
+            padding-top: 0.5rem ;
+            padding-bottom: 0.5rem ;
+            border-radius: 9999px;
+            transition-property: color, background-color;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 500ms;
+        }
+
+        .btn:hover {
+            background-color: var(--highlight_color);
+            color: #0c0c0c;
+        }
+
+        .pageSection:nth-child(3n+1) {
+            background-color: var(--sect_color1);
+        }
+
+        .pageSection:nth-child(3n+2) {
+            background-color: var(--sect_color2);
+        }
+
+        .pageSection:nth-child(3n+3) {
+            background-color: var(--sect_color3);
+        }
+    </style>
+    <title>About Us | Sable&#39;s Market </title>
+</head><nav>
+    
+    <div id="nav_btn" class="bg-pink-500 w-16 h-16 flex flex-col justify-around items-center rounded-full p-3 fixed right-2 top-2 z-50 sm:hidden">
+        <div class="bg-white h-1 w-full"></div>
+        <div class="bg-white h-1 w-full"></div>
+        <div class="bg-white h-1 w-full"></div>
+    </div>
+
+    <div id="mobileNav" class="fixed top-0 left-0 -translate-x-full w-full h-full bg-white rounded-b-[20px] z-40 transition lg:hidden">
+        <h2 class="py-4 h-20 text-center">Sable's<br> Market</h2>
+        <ul class="absolute w-full h-fit m-auto left-0 right-0 top-0 bottom-0">
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/">Home</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/about">About</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/chicken-cam">Chicken Cam</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/recipes">Recipes</a></li>
+            
+            <li class="text-black text-2xl p-5 text-center"><a href="/contact">Contact</a></li>
+            
+        </ul>
+    </div>
+
+    
+    <div id="desktopNav" class="hidden bg-header p-5 sm:block">
+        <ul class="flex justify-between text-xl font-bold text-white w-full max-w-2xl mx-auto px-4">
+            
+            <li><a href="/">Home</a></li>
+            
+            <li><a href="/about">About</a></li>
+            
+            <li><a href="/chicken-cam">Chicken Cam</a></li>
+            
+            <li><a href="/recipes">Recipes</a></li>
+            
+            <li><a href="/contact">Contact</a></li>
+            
+        </ul>
+    </div>
+
+</nav><body>
+
+
+
+
+<header style="background-image: url(/img/hero.jpg);" class="flex items-center bg-cover bg-bottom w-full h-[85vh]">
+    <div class="relative w-full p-8 bg-black/50 z-10">
+        <div class=" w-7/12 max-w-60 m-auto font-bold text-4xl text-center z-20 block sm:hidden">
+            
+            <img src="/img/logoVert.svg" class="w-full">
+            
+        </div>
+        <div class="w-9/12 max-w-lg m-auto font-bold text-7xl text-center z-20 hidden sm:block">
+            
+            <img src="/img/logoHori.svg" class="w-full">
+            
+        </div>
+        <h2>Sarnia's best in home grown eggs and produce</h2>
+    </div>
+</header>
+<div id="content">
+    <section class="pageSection py-8 px-[5%]">
+        <div class="content"><p>Hi there! My name is Sable and I&rsquo;m so excited to tell you about our family business, Sable&rsquo;s Market! My dad and I started this business together because we love fresh, delicious produce and we want to share that love with our community.</p>
+<p>At Sable&rsquo;s Market, we sell all sorts of fresh fruits and vegetables! We&rsquo;ve got juicy tomatoes, crispy bell peppers, sweet corn, crunchy carrots, leafy lettuce, and so much more! But my favorite thing that we sell is our farm-fresh eggs. They&rsquo;re so tasty and they make the best omelettes!</p>
+<p>I love helping my dad at the market. We wake up early in the morning to go to the farm and pick out the best produce for our customers. We work hard to make sure everything is fresh and ready to go. Then we load up our truck and head to the market to set up our stand.</p>
+<p>I love meeting all of our customers at the market. They&rsquo;re always so happy to see us and we&rsquo;re happy to see them too! We love chatting with everyone and sharing recipes and cooking tips. It&rsquo;s so much fun to see all of the different ways people use our produce in their cooking.</p>
+<p>If you&rsquo;re ever in town, come visit us at Sable&rsquo;s Market! We&rsquo;d love to show you all of the fresh and delicious things we have to offer. And who knows, maybe you&rsquo;ll even get to meet me!</p>
+</div>
+    </section>
+
+        </div><footer class="bg-header p-8 text-white">
+    <div class="flex flex-col items-center justify-between">
+        <div>
+            <p>Social Media Links</p>
+        </div>
+        <div>
+            <p>copyright stuff</p>
+        </div>
+    </div>
+</footer></body>
+</html>
