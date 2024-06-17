@@ -1,7 +1,17 @@
-<div>
-    {{ range .Site.GetPage "section" "recipes"}}
-        
-        <h2>{{ .Title }}</h2>
-
+<div class="grid grid-cols-[repeat(2,42.25rem)] auto-rows-fr gap-4 mx-auto w-fit">
+    {{ range (where site.RegularPages.ByDate.Reverse "Type" "in" "recipes") | first 4 }}
+        {{ $images := .Resources.ByType "image" }}
+        {{ $image := $images.First}}
+        <div class="w-full flex bg-white">
+            <p>{{ $image.RelPermalink }}</p>
+            <h2>{{ .Title }}</h2>
+        </div>
     {{ end }}
+  
+
+    <!-- {{ range (where .Site.RegularPages "Type" "in" "recipes") }}
+        {{ with .Resources.Get "index.md" }}
+        <h2>Ligma{{ .Title }}</h2>
+        {{ end }}
+    {{ end }} -->
 </div>
