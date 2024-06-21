@@ -1,3 +1,5 @@
+{{ $currPage := trim .RelPermalink "/" }}
+
 <nav>
     {{/*  Mobile nav  */}}
     <div id="nav_btn" class="bg-pink-500 w-16 h-16 flex flex-col justify-around items-center rounded-full p-3 fixed right-2 top-2 z-50 sm:hidden">
@@ -19,9 +21,8 @@
     <div id="desktopNav" class="hidden bg-header p-5 sm:block">
         <ul class="flex justify-between text-xl font-bold text-white w-full max-w-2xl mx-auto px-4">
             {{ range site.Menus.main }}
-            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            <li><a href="{{ .URL }}" class='{{ if eq (trim .URL "/") (trim $.Page.RelPermalink "/") }}text-highlight{{ end }}'>{{ .Name }}</a></li>
             {{ end }}
         </ul>
     </div>
-
 </nav>
