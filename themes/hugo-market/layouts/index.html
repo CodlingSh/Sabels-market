@@ -15,7 +15,7 @@
                 <div class="flex flex-col items-center max-w-7xl gap-8 lg:flex-row lg:items-start lg:justify-between lg:mx-auto">
                     <div class="content hori_margin_off">{{ .Content }}</div>
                     {{ range .Resources.ByType "image" }}
-                        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="" class="w-full max-w-lg lg:w-1/2">
+                        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ .Title }}" class="w-full max-w-lg lg:w-1/2 rounded-2xl">
                     {{ end }}
                 </div>
             {{ else if gt $count 1 }}
