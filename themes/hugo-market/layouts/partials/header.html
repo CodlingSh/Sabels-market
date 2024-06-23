@@ -4,10 +4,10 @@
 
 {{ if .IsHome }}
     {{ with $heroImage }}
-    <header style="background-image: url({{ .RelPermalink }});" class="flex items-center bg-cover bg-bottom w-full h-[85vh]">
+    <header style="background-image: url({{ .RelPermalink }});" class="flex items-center bg-cover bg-top w-full h-[85vh]">
     {{ end }}
         <div class="w-full p-8 bg-black/50 z-10">
-            <div class=" w-7/12 max-w-60 m-auto font-bold text-4xl text-center z-20 block sm:hidden">
+            <div class=" w-7/12 max-w-48 m-auto font-bold text-4xl text-center z-20 block sm:hidden">
                 {{ with $logoImageVert }}
                 <img src="{{ .RelPermalink }}" class="w-full">
                 {{ end }}
@@ -17,12 +17,12 @@
                 <img src="{{ .RelPermalink }}" class="w-full">
                 {{ end }}
             </div>
-            <h2 class="text-white text-center mt-16 text-2xl">Sarnia's best in home grown eggs and produce</h2>
+            <h2 class="text-white text-center mt-8 text-lg sm:mt-16 sm:text-2xl">Sarnia's best in home grown eggs and produce</h2>
         </div>
     </header>
 {{ else }}
     {{ with $heroImage }}
-    <header style="background-image: url({{ .RelPermalink }});" class="flex items-center bg-cover bg-bottom w-full h-52 sm:h-80">
+    <header style="background-image: url({{ .RelPermalink }});" class="flex items-center bg-cover bg-top w-full h-52 sm:h-80">
     {{ end }}
         <div class="flex items-end w-full h-full bg-black/50 z-10">
             <div class="w-5/6 max-w-80 mx-auto mb-8 font-bold text-center z-20 block sm:max-w-lg">
