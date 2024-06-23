@@ -1,4 +1,5 @@
 {{ $currPage := trim .RelPermalink "/" }}
+{{ $logoImageHori := resources.Get "img/logoHori.svg" }}
 
 <nav>
     {{/*  Mobile nav  */}}
@@ -8,11 +9,15 @@
         <div class="bg-white h-1 w-full"></div>
     </div>
 
-    <div id="mobileNav" class="fixed top-0 left-0 -translate-x-full w-full h-full bg-white rounded-b-[20px] z-40 transition lg:hidden">
-        <h2 class="py-4 h-20 text-center">Sable's<br> Market</h2>
-        <ul class="absolute w-full h-fit m-auto left-0 right-0 top-0 bottom-0">
+    <div id="mobileNav" class="fixed top-0 left-0 -translate-x-full w-full h-full bg-header text-white z-40 transition lg:hidden">
+        {{ with $logoImageHori }}
+            <img src="{{ .RelPermalink }}" class="w-1/2 mx-auto mt-2">
+        {{ end }}
+        <ul class="absolute w-full h-fit text-center text-2xl m-auto left-0 right-0 top-0 bottom-0">
             {{ range site.Menus.main }}
-            <li><a href="{{ .URL }}" class='{{ if eq (trim .URL "/") (trim $.Page.RelPermalink "/") }}text-highlight{{ end }}'>{{ .Name }}</a></li>
+            <li class="">
+                <a href="{{ .URL }}" class='{{ if eq (trim .URL "/") (trim $.Page.RelPermalink "/") }}text-highlight{{ end }} py-4 font-bold block'>{{ .Name }}</a>
+            </li>
             {{ end }}
         </ul>
     </div>
