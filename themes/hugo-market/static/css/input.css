@@ -13,6 +13,9 @@
 body {
     font-family: "Hepta", 'Times New Roman', Times, serif;
     font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .content p {
@@ -22,6 +25,42 @@ body {
 .content p:not(:last-child) {
     line-height: 1.5;
     margin-bottom: 1rem;
+}
+
+#recipe_article > * {
+    margin-bottom: 2rem;
+}
+
+#recipe_article h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+#recipe_article ul {
+    list-style-position: inside;
+    list-style-type: disc;
+}
+
+#recipe_article ol {
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+#recipe_article li:not(:last-child) {
+    margin-bottom: 0.5rem;
+}
+
+#recipe_article ol li::marker {
+    font-weight: bold;
+}
+
+.title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
 }
 
 @media (min-width: 640px) {
