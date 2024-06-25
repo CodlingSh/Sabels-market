@@ -12,6 +12,10 @@
             --sect_color3: {{ .Site.Params.colors.SectColor3 }}; 
         }
 
+        body {
+            background-color: var(--sect_color1);
+        }
+
         .text-highlight {
             color: var(--highlight_color);
         }
@@ -47,7 +51,7 @@
         }
 
         .pageSection:nth-child(3n+1) {
-            background-color: var(--sect_color1);
+            background-color: inherit;
         }
 
         .pageSection:nth-child(3n+2) {
