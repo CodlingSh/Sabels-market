@@ -1,3 +1,15 @@
-{{ define "main" }}
-<p>This is a single for a recipe</p>
-{{ end }}
+{{ define "main" -}}
+
+
+<article class="py-8 px-[2.5%] w-full max-w-3xl mx-auto" id="recipe_article">
+    <h1 class="title">{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+    {{ $first_image := index (.Resources.ByType "image") 0 }}
+    {{ with $first_image }}
+    <img src="{{ $first_image.RelPermalink }}" width="350" class="w-full rounded-2xl">
+    {{ end }}
+    <p class="content">{{ .Content }}</p>
+</article>
+
+
+{{- end }}
