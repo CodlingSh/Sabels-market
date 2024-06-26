@@ -2,6 +2,9 @@
 title = "{{ replace .Name "-" " " | title }}"
 date = "{{ .Date }}"
 draft = true
+prepTime = 99
+timeToMake = 99
+servingSize = 99
 description = "Make sure to change this."
 +++
 
