@@ -6,6 +6,8 @@ prepTime = 99
 timeToMake = 99
 servingSize = 99
 description = "Make sure to change this."
+rating = 0
+numRatings = 0
 +++
 
 ### Ingredients:
