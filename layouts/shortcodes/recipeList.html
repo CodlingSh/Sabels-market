@@ -8,8 +8,10 @@
             
             <div class="flex flex-col w-full sm:w-2/3 py-6 px-8">
                 <h2 class="text-center font-bold text-lg mb-4">{{ .Title }}</h2>
-                <p class="text-left line-clamp-3 !m-0 !mb-4">{{ .Params.description }}</p>
-                <a href="{{ .RelPermalink }}" class="btn">See More</a>
+                <p class="text-left line-clamp-3 h-full !m-0 !mb-4">{{ .Params.description }}</p>
+                <div class="flex items-end">
+                    <a href="{{ .RelPermalink }}" class="btn w-full">See More</a>
+                </div>
             </div>
         </div>
     {{ end }}
