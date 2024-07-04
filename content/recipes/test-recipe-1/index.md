@@ -12,4 +12,6 @@ description = "Make sure to change this."
 
 ### Instructions:
 
-1. List instructions here. Start all instructions with a '1.' and Hugo will automatically number them 
+1. This is a test
+1. This is a test
+1. This is a test 
