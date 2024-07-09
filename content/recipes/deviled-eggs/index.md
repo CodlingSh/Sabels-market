@@ -28,4 +28,4 @@ numRatings = 0
 1. Once the eggs are cool, peel them and slice them in half lengthwise. Scoop out the yolks and place them in a small bowl.
 1. Add the mayonnaise, Dijon mustard, salt, and black pepper to the bowl with the egg yolks. Mash and stir until well combined and smooth.
 1. Spoon the yolk mixture into the egg whites, filling each half generously.
-1. Sprinkle the deviled eggs with paprika and fresh parsley for garnish. 
+1. Sprinkle the deviled eggs with paprika, salt and fresh parsley for garnish. 
